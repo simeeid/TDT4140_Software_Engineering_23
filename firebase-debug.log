@@ -1,0 +1,31 @@
+[debug] [2023-02-13T08:26:57.311Z] ----------------------------------------------------------------------
+[debug] [2023-02-13T08:26:57.313Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-02-13T08:26:57.314Z] CLI Version:   11.22.0
+[debug] [2023-02-13T08:26:57.314Z] Platform:      win32
+[debug] [2023-02-13T08:26:57.314Z] Node Version:  v16.13.0
+[debug] [2023-02-13T08:26:57.315Z] Time:          Mon Feb 13 2023 09:26:57 GMT+0100 (sentraleuropeisk normaltid)
+[debug] [2023-02-13T08:26:57.315Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-13T08:26:57.399Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-13T08:26:57.399Z] > authorizing via signed-in user (trygveruud@gmail.com)
+[debug] [2023-02-13T08:26:57.399Z] [iam] checking project vamos-pu for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-02-13T08:26:57.401Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/vamos-pu:testIamPermissions [none]
+[debug] [2023-02-13T08:26:57.401Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/vamos-pu:testIamPermissions x-goog-quota-user=projects/vamos-pu
+[debug] [2023-02-13T08:26:57.402Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vamos-pu:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-02-13T08:26:58.240Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/vamos-pu:testIamPermissions 200
+[debug] [2023-02-13T08:26:58.240Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vamos-pu:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-02-13T08:26:58.241Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vamos-pu [none]
+[debug] [2023-02-13T08:26:58.634Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vamos-pu 200
+[debug] [2023-02-13T08:26:58.634Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vamos-pu {"projectId":"vamos-pu","projectNumber":"255921353515","displayName":"vamos-pu","name":"projects/vamos-pu","resources":{"hostingSite":"vamos-pu"},"state":"ACTIVE","etag":"1_388da6c7-3fdd-434b-b7ec-d83c4fbfbfbb"}
+[debug] [2023-02-13T08:27:02.783Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/vamos-pu/sites pageToken=&pageSize=10
+[debug] [2023-02-13T08:27:04.352Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/vamos-pu/sites 200
+[debug] [2023-02-13T08:27:04.352Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/vamos-pu/sites {"sites":[{"name":"projects/vamos-pu/sites/vamos-pu","defaultUrl":"https://vamos-pu.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-02-13T08:27:04.352Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/vamos-pu/sites 
+[debug] [2023-02-13T08:27:05.365Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/vamos-pu/sites 200
+[debug] [2023-02-13T08:27:05.365Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/vamos-pu/sites {"sites":[{"name":"projects/vamos-pu/sites/vamos-pu","defaultUrl":"https://vamos-pu.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-02-13T08:27:05.365Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vamos-pu/webApps/-/config [none]
+[debug] [2023-02-13T08:27:06.162Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vamos-pu/webApps/-/config 200
+[debug] [2023-02-13T08:27:06.162Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vamos-pu/webApps/-/config {"projectId":"vamos-pu","appId":"1:255921353515:web:53911841a6263e81750b6e","storageBucket":"vamos-pu.appspot.com","apiKey":"AIzaSyDm3OBHo1XAgUoIr1Dqm-DZhDgmESLIXHw","authDomain":"vamos-pu.firebaseapp.com","messagingSenderId":"255921353515","measurementId":"G-VKPZ8TPZ6M"}
+[debug] [2023-02-13T08:27:30.084Z] Error: EPERM: operation not permitted, open 'C:\Users\Trygv\OneDrive - NTNU\Skolefiler\PU\vamos\.next\trace'
+[error] 
+[error] Error: An unexpected error has occurred.
